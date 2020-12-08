@@ -1,0 +1,68 @@
+https://ccse.kennesaw.edu/fye/docs/1321/labs/m7/fa20/M7%20-%20L12%20-%20OOP2.pdf
+
+Lab12A: You Light Up My Life. Lightbulbs are rated in kilowatt-hours which means how many
+kilowatts (1,000 watts) are used by the lightbulb in one hour. For example, a 100-watt light bulb would
+use 0.1 kilowatt-hours in one hour – or would use 1 kilowatt-hour in ten hours. For simplicity, we’ll just
+use “watt-hours” for this part of the lab. Lightbulbs also burn out after being used, so we’re interested
+in knowing how many total watts the bulb has used.
+
+
+Write class LightBulb that has the following:
+• Attributes: wattage (e.g. 40 watts), the total watts used by the bulb, an ID, and whether or not the lightbulb is on. When a lightbulb is created,
+  the total watts is always 0 and the lightbulb is off. If you want to show off, mark all of your attributes as private.
+• Constructors: The class should have a default constructor that sets all attributes (the default ID to 0 and the wattage to 40). The class should have a second 
+  constructor that takes in an ID for the bulb as well as the wattage of the bulb – and assign those values appropriately.
+• A modifier: write a modifier for the Boolean attribute
+• A print method that prints whether or not the bulb is on and the total number of watt-hours used. The print method should behave like the sample output below.
+• An “incrementTime” method that takes in “hours” as a parameter. IF the lightbulb is on, then you should increment the total number of watt-hours used by the bulb.
+
+In main, do the following:
+• Create two lightbulb objects – the first using the default constructor and the second object using the second (overloaded) constructor.
+  Give the second lightbulb an ID of 1 and a wattage of 100 watts.
+• Call print on both lightbulbs (the first two lines in the sample output below).
+• Turn lightbulb 2 on. Lightbulb 1 should remain off.
+• Increment both light bulbs by 5 hours. Note, only the second lightbulb will accumulate total watt hours because bulb 1 is off.
+• Call print on both lightbulbs (the third and fourth lines below).
+
+  Sample (and only) Output
+    Bulb 0 is off and has used 0 watt-hours.
+    Bulb 1 is off and has used 0 watt-hours.
+    Bulb 0 is off and has used 0 watt-hours.
+    Bulb 1 is on and has used 500 watt-hours.
+
+
+Lab12B: ScottTrade® Would Be Proud. A lot of people are afraid of managing their own money
+because they don’t think they can beat the “pros”. However, using a financial advisor to manage your
+portfolio usually requires you to pay fees that, when looking at long-term growth, really take their toll.
+A long time ago, a guy named John Bogle came up with the idea of index funds. When you buy a
+share of an index fund, you’re buying little micro-slices of a whole bunch of different companies. What
+this means is that the growth of your portfolio matches the growth of the stock (or bond) market, which
+when taking fees into account, out-performs most of the pros (because the fees are really low!) To
+see an example, do a Google search for NYSEARCA:IVV and look at it over 5 years. Of course,
+educate yourself and make your own decisions, since risk is always involved1 Either way, invest early because savings grow exponentially!
+
+For this part of the lab, you’re going to create class Stock, which has the following:
+• Attributes: the stock’s name, the stock’s symbol, the previous closing value of the stock, and the current value of the stock. You’ll want to use floats for stock values.
+• Constructor: this takes in only the stock’s name and symbol. The other attributes should default to 0.
+• Method getName( ) which returns the stock’s name
+• Method getSymbol( ) which returns the stock’s symbol
+• Method setClosingPrice( ) which sets the previous closing price
+• Method setCurrentPrice( ) which sets the current price
+• Method getChangePercent( ) which returns an integer of the rounded percentage changedfrom the previous closing price to the current price: 
+  (current price – previous closing price) / current price * 100. You will have to call the round( ) method – which for Java C# is in the Math class (see lecture slides). You may also have to type cast to an integer.
+• Method print( ) which prints out a meaningful description of the stock that matches the sample output below.
+
+Then, in main, create two stock objects setting their closing and current prices based on the output
+below. Finish by calling the print method on both stocks. You should NOT directly access the
+attributes from main, but instead, use the modifiers you wrote.
+  Sample (and only) output:
+    Google stock
+     Symbol: GOG
+     Closing price: 134.67
+     Current price: 131.98
+     Change percent: -2%
+    Microsoft stock
+     Symbol: MSF
+     Closing price: 156.52
+     Current price: 161.22
+     Change percent: 3%
