@@ -1,0 +1,101 @@
+https://ccse.kennesaw.edu/fye/docs/1321/labs/m4/fa20/M4%20-%20L7%20-%20Arrays.pdf
+
+Lab 7A: Thank you, Grace Hopper. You may have heard the story, but the programming term “bug”
+is attributed to the computer legend Grace Hopper who, after diagnosing the problem with a program,
+determined it was because a bug (in this case, a moth) physically wedged itself under a vacuum tube
+– causing the machine to no longer work. We’ve come a long way since then…
+For this part of the lab, you are going to write a program, then show what it looks like using the
+debugger. So, in addition to your code, you’re going to have to submit a screenshot of the debugger.
+Start by writing the following program: prompt the user for the size of an integer array, declare an
+array of that size, then populate each cell of the array with the square of the cell’s index (e.g. cell 0 =
+0, cell 1 = 1, cell 2 = 4, cell 3 = 9). Finally, print out the contents of the array separated by the “pipe”
+symbol (above the Enter key) on a single line. The program should behave like the sample output
+below. User input is denoted in bold.
+C++ students: see the appendix for example code of creating an array based off of a user variable.
+Use the debugger: Once your program is working, you must set a breakpoint in your code (preferably
+the line that is printing out each cell), then start walking through the code. Just before the program is
+finished, show the array in the debugger – with each cell holding the correct value (i.e. expand the
+array in the debugger, just like in the video). Take a screenshot of it and save it to your desktop. In
+addition to your code, you will need to submit this image.
+    Sample #1:
+      Enter the size of the array: 5
+      |0|1|4|9|16
+    Sample #2:
+      Enter the size of the array: 14
+      |0|1|4|9|16|25|36|49|64|81|100|121|144|169
+
+
+Lab7B: Yes, your Honor! Graduating with honors is a big deal, but really hard to do! You can see
+what it takes at https://commencement.kennesaw.edu/information-candidates/graduating-honors.php.
+For this lab, you’re going to write a program that prompts the user for the number of GPAs to enter.
+The program should then prompt the user to enter the specified number of GPAs. Finally, the
+program should print out the graduation standing of the students based on their GPAs. Your program
+should behave like the sample output below.
+  Sample #1:
+    Enter the number of GPAs: 5
+    GPA #0: 3.97
+    GPA #1: 3.5
+    GPA #2: 3.499
+    GPA #3: 3.71
+    GPA #4: 1.9
+    Student #0: Summa Cum Laude
+    Student #1: Cum Laude
+    Student #2: Graduating
+    Student #3: Magna Cum Laude
+    Student #4: Not graduating
+  Sample #2:
+    Enter the number of GPAs: 7
+    GPA #0: 0.03
+    GPA #1: 4.0
+    GPA #2: 3.32
+    GPA #3: 2.81
+    GPA #4: 3.75
+    GPA #5: 3.85
+    GPA #6: 2.3
+    Student #0: Not graduating
+    Student #1: Summa Cum Laude
+    Student #2: Graduating
+    Student #3: Graduating
+    Student #4: Magna Cum Laude
+    Student #5: Magna Cum Laude
+    Student #6: Graduating
+
+
+
+Lab7C: Write a program that compares the content of 2 single-dimensional arrays of the same size.
+The program prompts the users to enter the array size. It then prompts the user to initialize each array
+with integer values. The program then compares the arrays by determining if cells with the same
+index number have the same values. If they do, the program prints out that the arrays are identical.
+Otherwise, it prints out that they are not identical. Your program should behave like the sample output
+below.
+  Sample #1:
+    Enter the size of the arrays: 4
+    Enter array 1 slot 0: 1
+    Enter array 2 slot 0: 1
+    Enter array 1 slot 1: 2
+    Enter array 2 slot 1: 2
+    Enter array 1 slot 2: 3
+    Enter array 2 slot 2: 3
+    Enter array 1 slot 3: 4
+    Enter array 2 slot 3: 4
+    The arrays are identical
+  Sample #2:
+    Enter the size of the arrays: 5
+    Enter array 1 slot 0: 78
+    Enter array 2 slot 0: 81
+    Enter array 1 slot 1: 81
+    Enter array 2 slot 1: 78
+    Enter array 1 slot 2: 6
+    Enter array 2 slot 2: 6
+    Enter array 1 slot 3: 97
+    Enter array 2 slot 3: 97
+    Enter array 1 slot 4: 14
+    Enter array 2 slot 4: 14
+    The arrays are not identical
+  Sample run 3:
+    Enter the size of the arrays: 2
+    Enter array 1 slot 0: 17
+    Enter array 2 slot 0: 17
+    Enter array 1 slot 1: 3
+    Enter array 2 slot 1: 3
+    The arrays are identical
