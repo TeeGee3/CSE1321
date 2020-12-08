@@ -1,0 +1,65 @@
+https://ccse.kennesaw.edu/fye/docs/1321/labs/m4/fa20/M4%20-%20L6%20-%20Loop%20Structures.pdf
+
+Lab6A (Warmup): One of my favorite programs is the “Gimme a cookie” program. In years past,
+students would have to log into a main terminal to do their labs. Periodically, a student would
+leave their terminal for a few minutes and someone else would write a program that would prompt
+the user with “Gimme a cookie”. It would surprise people when they returned to their terminal to
+see “Gimme a cookie”. They would enter random things until they figured out they just had to type
+the word “cookie” to regain control of their terminal. For this lab, you’ll write this program using a
+do-while loop. Using a for or while loop to solve this problem will receive no credit. User input is
+denoted in bold. Hint: don’t forget how to compare strings…
+  Sample output:
+    Gimme a cookie: who is this?
+    Gimme a cookie: I'm not joking
+    Gimme a cookie: What is going on?
+    Gimme a cookie: help
+    Gimme a cookie: cookie
+  
+  
+Lab6B: Min/Max: For this lab, you’re going to use a while loop. Write a program that asks the
+user for a number between -1000 and +1000 (an integer) until they type in 0. After each number is
+entered, the program will print out the maximum and minimum number entered so far. For
+simplicity, initialize your minimum to be the value 1001 and your maximum to be -1001. Here’s a
+puzzle for advanced students: If you wanted to code this to work regardless of the range, how
+would you do it? You could use things like Math.MIN and Math.MAX, but is there another way?
+  Sample output:
+    Enter a number between -1000 and +1000: 6
+    Min is 6
+    Max is 6
+    Enter a number between -1000 and +1000: 11
+    Min is 6
+    Max is 11
+    Enter a number between -1000 and +1000: -3
+    Min is -3
+    Max is 11
+    Enter a number between -1000 and +1000: 99
+    Min is -3
+    Max is 99
+    Enter a number between -1000 and +1000: -45
+    Min is -45
+    Max is 99
+    Enter a number between -1000 and +1000: 3
+    Min is -45
+    Max is 99
+    Enter a number between -1000 and +1000: 0
+    Min is -45
+    Max is 99
+
+Lab6C: Well, that’s an odd question! For the last part of this lab, you’re going to use a for loop.
+Write a program that asks the user for a starting number and ending number to count between;
+assume both numbers will be positive numbers. The program should then sum up all of the odd
+numbers. The program must work even if the starting number is larger than the ending number.
+Hint: compare a loop that counts “up” and a loop that counts “down”. What’s different? Start by
+getting sample output #1 and #2 working, then work on #3.
+  Sample output #1:
+    Enter a starting number: 3
+    Enter an ending number: 7
+    Sum of odds is: 15
+  Sample output #2:
+    Enter a starting number: 10
+    Enter an ending number: 20
+    Sum of odds is: 75
+  Sample output #3:
+    Enter a starting number: 20
+    Enter an ending number: 10
+    Sum of odds is: 75
