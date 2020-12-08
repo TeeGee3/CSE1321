@@ -1,0 +1,72 @@
+https://ccse.kennesaw.edu/fye/docs/1321/labs/m3/fa20/M3%20-%20L5%20-%20Selection%20Structures_FA20.pdf
+
+Lab5A: To isolate or not isolate. That is the question.
+We hope you’re doing well this semester and, most importantly, staying healthy! Along those lines,
+if you haven’t seen it before, you can take a COVID-19 Self-Assessment test on KSU’s website at
+https://coronavirus.kennesaw.edu/ . For this part of the lab, you’re going to write a program that
+mimics the logic of the self-assessment. Before starting this, you’ll need to go through the selfassessment multiple times trying all the possibilities.
+Write a program that prompts the user with questions, reads input from them (as characters), and
+provides an assessment based on the input. The program should behave like the sample output
+below. As always, user input is indicated by bold characters.
+Note: KSU has a helpline that can help answer your COVID-related questions: 470-578-6644
+
+Sample output #1:
+  Experiencing severe symptoms (Y/N)? Y
+  Seek emergency care.
+Sample output #2:
+  Experiencing severe symptoms (Y/N)? N
+  Close contact with someone who has COVID (Y/N)? Y
+  Quarantine and get tested if you feel sick.
+Sample output #3:
+  Experiencing severe symptoms (Y/N)? N
+  Close contact with someone who has COVID (Y/N)? N
+  If you experience other symptoms, isolate and get tested.
+  
+ 
+Lab5B: Sounds like somebody has a case of the Mondays
+For this part of the lab, you’re going to design and implement a program to determine the day of
+your next meeting based on today. The program reads an integer from the user that represents
+today’s day (assume 0 for Sunday, 1 for Monday, 2 for Tuesday, 3 for Wednesday, etc…). You’ll
+then prompt the user for another integer value representing the number of days until the meeting.
+The program determines and prints out the meeting day. The program should behave like the
+sample output below.
+Note: You must use a switch statement as part of your solution.
+Sample output #1:
+  Enter a number that represents today (Sunday==0, Monday==1,...) 2
+  Enter the number of days until the meeting: 21
+  Meeting day is Tuesday
+Sample output #2:
+  Enter a number that represents today (Sunday==0, Monday==1,...) 0
+  Enter the number of days until the meeting: 11
+  Meeting day is Thursday
+Sample output #3:
+  Enter a number that represents today (Sunday==0, Monday==1,...) 5
+  Enter the number of days until the meeting: 3523
+  Meeting day is Sunday
+  
+  
+Lab5C: What’s the point?
+For the last part of your lab, design and implement a program that prompts the user to enter the xcoordinate and y-coordinate of a point (in a Cartesian plane) as integer values. The program prints
+out the entered values followed by the location of the point on the plane. The possibilities for a
+point are: the origin, on the x-axis, on the y-axis, in the first quadrant, in the second quadrant, in
+the third quadrant, or in the fourth quadrant. Format the outputs following the sample runs below.
+Sample output #1:
+  Enter x: 0
+  Enter y: 0
+  This point is the origin.
+Sample output #2:
+  Enter x: 0
+  Enter y: 5
+  This point is on the y axis.
+Sample output #3:
+  Enter x: -5
+  Enter y: 0
+This point is on the x axis.
+  Sample output #4:
+  Enter x: 1
+  Enter y: 1
+  This point is in the first quadrant.
+Sample output #5:
+  Enter x: -1
+  Enter y: -1
+  This point is in the third quadrant.
