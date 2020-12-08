@@ -1,0 +1,83 @@
+https://ccse.kennesaw.edu/fye/docs/1321/labs/m6/fa20/M6%20-%20L10%20-%20Strings.pdf
+
+Lab10A: A land with no vowels. If you enjoy learning languages, you might know that some
+languages do not write vowels (though they are still present when spoken). It is left to the reader to
+determine which vowels to use. Such languages systems are called abjads, which is derived from the
+first four letters in Arabic. What would English look like if we didn’t print vowels? Let’s find out.
+Write a method that takes in a string. The method should replace all vowels with an asterisk ‘*’ and
+then print out the string. However, the method must return the number of vowels that it replaced. How
+would this be done? Look at the slides from lecture to see what string operations/techniques you can
+leverage.
+
+In main, prompt the user to enter a string. Since the method above is responsible for printing the
+string, main should call the method and just print out the number of vowels that were in the string (i.e.
+the return of the method). Your program should behave like the sample output below. As always,
+user input is denoted in bold. Can you read the vowelless output?
+Note: C++ students. Don’t forget to use getline( ) to get a full string. Otherwise, you’ll only get the
+first word.
+
+  Sample output #1
+    Enter a string: Bob was here
+    B*b w*s h*r*
+    That string has 4 vowels.
+    Sample output #2
+    Enter a string: These labs are getting really bizarre!
+    Th*s* l*bs *r* g*tt*ng r**lly b*z*rr*!
+    That string has 12 vowels.
+    
+    
+Lab10B: Rated E for Everyone. A lot of video games for children are online and should be a safe
+space for kids to remain kids, even when they have chat rooms. That’s not always the case and it’s a
+serious problem – so we’re going to help. One thing that’s relatively easy to do is replace offensive
+words with symbols (e.g. &^#$*!). For simplicity (and to keep this lab “E for everyone”), we’re going to
+search for the word “dang” and replace it with “&^#@”. If only we could use this in your GroupMe
+discussions…
+Similar to Lab10A, you’re going to write a method that takes in a string. The method will identify the
+locations of all instances of the offensive word and replace it with the symbols above. The method
+returns nothing, and no counting of replacements should occur. Your program should behave like the
+sample output below.
+Hint: the lecture slides will help.
+
+  Sample output #1
+    Enter a string: This dang lab is difficult!
+    Found bad word at: 5
+    This &^#@ lab is difficult!
+  Sample output #2
+    Enter a string: I had this dang bug in my dang lab. I thought, dang!
+    Found bad word at: 11
+    Found bad word at: 26
+    Found bad word at: 47
+    I had this &^#@ bug in my &^#@ lab. I thought, &^#@!
+
+
+Lab10C: Et tu, Brute? In security, one of the simplest forms of encryption is called a Caesar cypher
+(which is named after Julius Caesar, who actually used this technique). The most famous of these
+cyphers is called “Rot13”. If A==0, B==1, C==2 and so on, then it is possible to add the value 13 to
+the letter to get the “encrypted” letter. For example, A==0. Adding 13 to it yields the value 13, which
+is the letter N. For letters whose value is greater than 13, you still add 13. However, you always mod
+(%) the new value by 26. For example, the letter T == 19; adding 13 gives 32. Then, 32 % 26 == 6,
+which is the letter G. Interestingly, with this scheme, you can encrypt and decrypt a message using
+the same process. For example, when G is encrypted, it yields a T. When T is encrypted, it yields a G.
+Note: you will only work with lowercase letters for this assignment. The numeric value of the letter ‘a’ is 97.
+So, how do you covert a character to a number? It’s easy when you use type casting:
+char c = ‘c’;
+int asciiValue = (int)c; // puts the value 99 into asciiValue
+If ‘a’ == 97, ‘b’ == 98 and ‘c’ == 99, how do you make is so that ‘a’ converts to a 0? Just subtract 97…
+You do not have to write any methods for this assignment. Instead (like Lab10A), you need to access
+individual characters, convert them to the range of 0-25, add 13, mod by 26, then convert them back
+to ASCII range of 97-123. Your program should behave like the sample output below.
+
+Hint #1: the debugger will definitely help you on this part of the lab.
+Hint #2: you should only convert numbers whose values are in the range of {97,..,122}. This way, a
+space (with a value of 32) will not be converted.
+ 
+ Sample output #1
+    Enter a string: the cake is a lie
+    gur pnxr vf n yvr
+  Sample output #2
+    Enter a string: gur pnxr vf n yvr
+    the cake is a lie
+  Sample output #3
+    Enter a string: there has never been a sadness that can't be cured by
+    breakfast food
+    gurer unf arire orra n fnqarff gung pna'g or pherq ol oernxsnfg sbbq
