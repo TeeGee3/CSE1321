@@ -1,0 +1,104 @@
+https://ccse.kennesaw.edu/fye/docs/1321/labs/m6/fa20/M6%20-%20L9%20-%20Methods.pdf
+
+Lab9A: Warmup. Write a program that contains three methods:
+Method max (int x, int y, int z) returns the maximum value of three integer values.
+Method min (int X, int y, int z) returns the minimum value of three integer values.
+Method average (int x, int y, int z) returns the average of three integer values.
+Note: for Java and C#, these methods must be public and static.
+Prompt the user for three numbers, then call these methods from main to print out the minimum,
+maximum and average of numbers that the user entered. Your program should behave like the
+sample output below.
+  
+  Sample output #1
+    Enter number 1: 5
+    Enter number 2: 9
+    Enter number 3: 2
+    Min is 2
+    Max is 9
+    Average is 5.33333
+    Sample output #2
+    Enter number 1: 45
+    Enter number 2: 11
+    Enter number 3: -3
+    Min is -3
+    Max is 45
+    Average is 17.6667
+
+
+
+Lab9B: MicroDB. In Lab9A, each method returned an integer. In this part of the lab, all methods will
+have a void return type and take in an array of integers as a parameter. You’re going to write a
+program that creates a mini database of numbers that allows the user to reset the database, print the
+database, add a number to the database, find the sum of the elements in the database, or quit. In
+main, you will declare an array of 10 integers (this is a requirement). Then you will define the
+following methods:
+• printArray (int[ ] arr) – this takes in an array and prints it
+• initArray (int[ ] arr) – this initializes the array so that each cell is 0
+• printSum (int[ ] arr) – this calculates the sum of the elements in the array and prints it
+• enterNum(int[ ] arr) – this asks the user for a slot number and value – putting the value into the
+array in the correct slot
+• printMenu (int[ ] arr) – prints the menu in the sample output (that’s it, nothing more)
+Note: C++ folks – if you want to pass the size of the array as a second parameter, you can.
+In main, create an array of 10 integers and immediately call initArray( ). Then, continuously looping,
+print the menu and ask the user what they want to do – calling the appropriate methods based on the
+user’s choice. Note that every time you call a method, you must pass the array that was created in
+main. If it makes it easier, we used a do-while loop and a switch statement in main. In our
+implementation, main was only 15 lines of code.
+
+  Sample output #1
+    Would you like to:
+    1) Enter a number
+    2) Print the array
+    3) Find the sum of the array
+    4) Reset the array
+    5) Quit
+    1
+    Enter the slot: 5
+    Enter the new value: 76
+    Would you like to:
+    1) Enter a number
+    2) Print the array
+    3) Find the sum of the array
+    4) Reset the array
+    5) Quit
+    1
+    Enter the slot: 2
+    Enter the new value: 33
+    Would you like to:
+    1) Enter a number
+    2) Print the array
+    3) Find the sum of the array
+    4) Reset the array
+    5) Quit
+    2
+    |0|0|33|0|0|76|0|0|0|0
+    Would you like to:
+    1) Enter a number
+    2) Print the array
+    3) Find the sum of the array
+    4) Reset the array
+    5) Quit
+    3
+    109
+    Would you like to:
+    1) Enter a number
+    2) Print the array
+    3) Find the sum of the array
+    4) Reset the array
+    5) Quit
+    4
+    Would you like to:
+    1) Enter a number
+    2) Print the array
+    3) Find the sum of the array
+    4) Reset the array
+    5) Quit
+    2
+    |0|0|0|0|0|0|0|0|0|0
+    Would you like to:
+    1) Enter a number
+    2) Print the array
+    3) Find the sum of the array
+    4) Reset the array
+    5) Quit
+    5
