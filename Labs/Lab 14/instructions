@@ -1,0 +1,115 @@
+https://ccse.kennesaw.edu/fye/docs/1321/labs/m8/fa20/Lab%2014%201321L%20-%20Fall%202020.pdf
+
+Lab14A: Unlike with one-dimensional arrays which consists of only one row of values, twodimensional arrays are a structure that can have multiple rows and columns. Much like we did earlier
+in the semester with trying to find the sum of all the values in a one-dimensional array, for this
+exercise please develop a program that calculates both the sum of each of the rows and the sum of
+each of the columns; please also calculate the sum of all the values in the array as well. No classes
+will be needed for this exercise; however, you will have to define two methods one for summing the
+rows called rowTotal() and another for summing the columns called columnTotal(); both should take
+the array as a parameter and return the appropriate values to the main. The main should ask the user
+for the values for the 3-by-4 integer array, call the above methods, and print out both the array and the
+results like shown in the sample below. Please add relevant comments if needed. C++ student will
+have to read the array from a file rather than ask the user for values.
+  
+  Sample run 1:
+    Enter a value: 9
+    Enter a value: 1
+    Enter a value: 2
+    Enter a value: 4
+    .
+    .
+    Enter a value: 3
+    The entered matrix:
+    9 1 2 4
+    2 2 8 0
+    3 3 3 3
+    Sum of column 0 is 14
+    Sum of column 1 is 6
+    Sum of column 2 is 13
+    Sum of column 3 is 7
+    Sum of row 0 is 16
+    Sum of row 1 is 12
+    Sum of row 2 is 12
+  Sample run 2:
+    [SIMILAR FORMAT OF INPUT ABOVE, BUT DIFFERENT NUMBERS]
+    The entered matrix:
+    11  12   13   14
+    1   2     3    4
+    4   3     2    1
+    Sum of column 0 is 16
+    Sum of column 1 is 17
+    Sum of column 2 is 18
+    Sum of column 3 is 19
+    Sum of row 0 is 50
+    Sum of row 1 is 10
+    Sum of row 2 is 10
+
+
+Lab14B: Sometimes it is important to be able to find the largest or smallest value in a twodimensional matrix. Please write a program that retrieves the location of the largest number in the
+array. Like with Lab14A, you have to define this procedure in a separate method that is called by the
+by the main, the method’s name should be findMax() which should take a 3x4 array and return both
+the location (row and column) of the maximum value in the inputted array. Please keep in mind that
+there may be duplicates in the array and that the method should return the location of the first
+instance of the maximum value. The location should be comprised of the row index and the column
+index. So as a wrap up, the program should take user input of a 3-by-4 integer array, print out that
+array, and then call the method and print out the results just like the sample below. Please add
+relevant comments if needed. C++ student will have to read the array from a file rather than ask the
+user for values.
+
+  Sample run 1:
+    [SIMILAR FORMAT OF INPUT ABOVE, BUT DIFFERENT NUMBERS]
+    The entered matrix:
+    9 1 2 4
+    2 11 18 20
+    3 20 3 12
+    First largest value is located at row 1 and column 3
+  Sample run 2:
+    [SIMILAR FORMAT OF INPUT ABOVE, BUT DIFFERENT NUMBERS]
+    The entered matrix:
+    19 11 22 44
+    29 51 81 20
+    23 90 45 90
+    First largest value is located at row 2 and column 1
+  Sample run 3:
+    [SIMILAR FORMAT OF INPUT ABOVE, BUT DIFFERENT NUMBERS]
+    The entered matrix:
+    89 11 22 44
+    29 51 80 20
+    33 10 45 10
+    First largest value is located at row 0 and column 0
+
+
+
+Lab14C: Please write a program that adds two arrays together; the arrays being added should both
+be 3-by-3 arrays since mathematically you cannot add two matrices that are of different sizes. In this
+program please define a method called addArrays() that take both the 3-by-3 arrays as parameters
+and returns their addition also as a 3-by-3 array. In short, in the main, you should ask the user for
+value to fill up two 3-by-3 arrays, print both arrays out, call the addArrays() method to add the arrays,
+and print out the resultant array like shows in the sample. C++ students do not have to import the
+arrays from a file, user input for this exercise is fine.
+  Sample run 1:
+    Matrix A:
+    2 1 2
+    7 1 8
+    3 20 3
+    Matrix B:
+    1 1 1
+    1 1 1
+    1 1 1
+    A + B:
+    3 2 3
+    8 2 9
+    4 21 4
+  Sample run 2:
+    Matrix A:
+    2 2 2
+    2 2 2
+    2 2 2
+    Matrix B:
+    2 2 2
+    2 2 2
+    2 2 2
+    A + B:
+    4 4 4
+    4 4 4
+    4 4 4
