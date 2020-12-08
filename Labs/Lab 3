@@ -1,0 +1,99 @@
+https://ccse.kennesaw.edu/fye/docs/1321/labs/m2/fa20/M2%20-%20L3%20-%20TypeSystems%20-%20FA20.pdf
+
+Lab3A: Credit Cards. Financial advisors will almost always tell you that you should pay for things
+in cash and avoid credit card debt. Further, they tell you that you should have a small emergency
+fund that you keep stocked for emergencies like flat tires, dead refrigerators and so on. However,
+life doesn’t always work that way and sometimes we need to charge things. So, for this part of the
+lab, we’re going to write a calculator that calculates your minimum monthly payment on your card.
+To do that, you’ll ask the user for 1) the amount of money they have on their credit card and 2) the
+“APR” – or Annual Percentage Rate – of the card. We’ll keep the calculations simple (so these
+aren’t perfect), but to calculate the minimum payment, you multiply the amount you owe times
+APR/12 – since there are 12 months in a year. Note: paying just the minimum should be a last
+resort, since it usually does not make progress towards paying off the card. Note: the $ below is
+part of the prompt, not what the user enters. Your program should behave User input is in bold.
+
+Sample run 1:
+    Amount owed: $2000
+    APR: 19.75
+    Monthly percentage rate: 1.64583
+    Minimum payment: $32.9167
+    Sample run 2:
+    Amount owed: $8500
+    APR: 29
+    Monthly percentage rate: 2.41667
+    Minimum payment: $205.417
+
+
+
+Lab3B: GPA calculator. Yes! Another calculator! GPA is important. Not only do you need to
+have a 2.0 GPA to graduate from KSU, it’s also one of the many things that employers look in the
+interview process. If you don’t know how that’s calculated, you need to understand that it’s based
+on “quality points” using the following scale:
+• A = 4 quality points
+• B = 3 quality points
+• C = 2 quality points
+• D = 1 quality point
+• F = 0 quality points
+Second, each course counts for a certain number of hours. For example, most courses are 3
+hours. This lab is a 1-hour course. If you take Calculus, that’s 4 hours. To calculate the quality
+points that you earn for just one course, multiply the number of hours of that course * the quality
+points you earn for that course.
+To calculate your GPA for an entire semester, you take the total number of quality points earned
+that semester and divide through by the total number of hours taken that semester.
+For this part of the lab, write a program that asks for the number of hours and quality points earned
+for four courses, then displays the total hours, total quality points, and GPA. For this part of the
+lab, you should only use floats as the data type for your variables. User input is in bold.
+
+Sample run 1:
+    Course 1 hours: 4
+    Grade for course 1: 4
+    Course 2 hours: 3
+    Grade for course 2: 3
+    Course 3 hours: 3
+    Grade for course 3: 4
+    Course 4 hours: 4
+    Grade for course 4: 4
+    Total hours is: 14
+    Total quality points is: 53
+    Your GPA for this semester is 3.78571
+Sample run 2:
+    Course 1 hours: 4
+    Grade for course 1: 1
+    Course 2 hours: 1
+    Grade for course 2: 4
+    Course 3 hours: 3
+    Grade for course 3: 4
+    Course 4 hours: 3
+    Grade for course 4: 3
+    Total hours is: 11
+    Total quality points is: 29
+    Your GPA for this semester is 2.63636
+
+
+Lab3C: Design and implement a program that determines the values of coins in a jar. The program
+prints out the total dollars and cents in the jar. The program prompts the user to enter the number
+of coins (quarters, dimes, nickels, and pennies). Print out the number of coins entered for each
+coin type on separate lines followed by the total amount of money in the jar as dollars and cents as
+shown below.
+
+Sample run 1:
+    Enter the number of quarters: 2
+    Enter the number of dimes: 2
+    Enter the number of nickels: 2
+    Enter the number of pennies: 2
+    You entered 2 quarters.
+    You entered 2 dimes.
+    You entered 2 nickels.
+    You entered 2 pennies.
+    Your total is 0 dollars and 82 cents.
+Sample run 3:
+    Enter the number of quarters: 2
+    Enter the number of dimes: 3
+    Enter the number of nickels: 4
+    Enter the number of pennies: 5
+    You entered 2 quarters.
+    You entered 3 dimes.
+    You entered 4 nickels.
+    You entered 5 pennies.
+    Your total is 1 dollars and 5 cents.
+I
