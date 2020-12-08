@@ -1,0 +1,151 @@
+https://ccse.kennesaw.edu/fye/docs/1321/labs/m7/fa20/M7%20-%20L13%20-%20OOP3.pdf
+
+Lab13A: Battle Royale. For this lab, you’re going to create an Enemy class and a Hero class and
+they will be nearly identical. Both classes contain an amount of “life” (which is called “HP” or “hit
+points”) and an amount of damage the can inflict per attack. They also have a Boolean that
+represents whether the object is still alive. Both classes have a method called takeDamage( ) that
+takes in an amount of damage received as a parameter, which is subtracted from the objects hit
+points. This method also can change the Boolean from true to false if the HP is <= 0. Add an
+appropriate constructor for the class.
+In main, you will prompt the user for a number of enemies in the game and the amount of damage
+they do per attack. You will also prompt for the hero’s starting HP and the amount of damage the
+hero does per attack.
+Then, create an array of Enemies of the size specified by the user. You will initialize the HP of each
+enemy based off of its cell/index number, which is 10 + (2*index number) – (10, 12, 14…)
+The program will simulate series of “rounds” of a battle until a winner emerges. So long as 1) the hero
+is still alive and 2) there is at least one enemy alive, rounds will continue (hint: set that loop up first).
+For each round, you must loop through the enemy array and inflict damage to each one – specifically
+the amount of damage of the hero. You must also inflict the damage of each enemy on the hero. A
+battle between the hero and an enemy only occurs if that enemy is alive.
+After each round, you must print out the status of the game, which includes 1) the number of enemies
+left, 2) the HP of each enemy, and 3) the HP of the hero. At the end of the game, you must print out
+the winner.
+Hint: you will likely want to have a (static) method above main that takes in the array of enemies and
+returns the number of enemies that are alive. You’ll also want a method that takes in the enemy array
+and prints out the HP. These will keep your main code from having too many details.
+Hint #2: we used a do/while loop as the main loop (for each round). 
+
+
+Sample Output #1 – Hero wins
+  Enter the number of enemies: 8
+  Enter the enemy damage: 2
+  Enter the hero's starting HP: 110
+  Enter the hero's damage: 3
+  ==== After round 1 ====
+  Num enemies left: 8
+  |7|9|11|13|15|17|19|21
+  Hero HP: 94
+  ==== After round 2 ====
+  Num enemies left: 8
+  |4|6|8|10|12|14|16|18
+  Hero HP: 78
+  ==== After round 3 ====
+  Num enemies left: 8
+  |1|3|5|7|9|11|13|15
+  Hero HP: 62
+  ==== After round 4 ====
+  Num enemies left: 6
+  |-2|0|2|4|6|8|10|12
+  Hero HP: 46
+  ==== After round 5 ====
+  Num enemies left: 5
+  |-2|0|-1|1|3|5|7|9
+  Hero HP: 34
+  ==== After round 6 ====
+  Num enemies left: 3
+  |-2|0|-1|-2|0|2|4|6
+  Hero HP: 24
+  ==== After round 7 ====
+  Num enemies left: 2
+  |-2|0|-1|-2|0|-1|1|3
+  Hero HP: 18
+  ==== After round 8 ====
+  Num enemies left: 0
+  |-2|0|-1|-2|0|-1|-2|0
+  Hero HP: 14
+  Hero wins!
+
+
+Sample Output #2 – Tie
+  Enter the number of enemies: 7
+  Enter the enemy damage: 3
+  Enter the hero's starting HP: 90
+  Enter the hero's damage: 4
+  ==== After round 1 ====
+  Num enemies left: 7
+  |6|8|10|12|14|16|18
+  Hero HP: 69
+  ==== After round 2 ====
+  Num enemies left: 7
+  |2|4|6|8|10|12|14
+  Hero HP: 48
+  ==== After round 3 ====
+  Num enemies left: 5
+  |-2|0|2|4|6|8|10
+  Hero HP: 27
+  ==== After round 4 ====
+  Num enemies left: 3
+  |-2|0|-2|0|2|4|6
+  Hero HP: 12
+  ==== After round 5 ====
+  Num enemies left: 1
+  |-2|0|-2|0|-2|0|2
+  Hero HP: 3
+  ==== After round 6 ====
+  Num enemies left: 0
+  |-2|0|-2|0|-2|0|-2
+  Hero HP: 0
+  Enemies win!
+
+
+
+Sample Output #3 – Enemies win
+  Enter the number of enemies: 11
+  Enter the enemy damage: 3
+  Enter the hero's starting HP: 100
+  Enter the hero's damage: 5
+  ==== After round 1 ====
+  Num enemies left: 11
+  |5|7|9|11|13|15|17|19|21|23|25
+  Hero HP: 67
+  ==== After round 2 ====
+  Num enemies left: 10
+  |0|2|4|6|8|10|12|14|16|18|20
+  Hero HP: 34
+  ==== After round 3 ====
+  Num enemies left: 8
+  |0|-3|-1|1|3|5|7|9|11|13|15
+  Hero HP: 4
+  ==== After round 4 ====
+  Num enemies left: 5
+  |0|-3|-1|-4|-2|0|2|4|6|8|10
+  Hero HP: -20
+  Enemies win!
+  
+  
+Sample Output #4 – Quick fight
+  Enter the number of enemies: 7
+  Enter the enemy damage: 4
+  Enter the hero's starting HP: 120
+  Enter the hero's damage: 5
+  ==== After round 1 ====
+  Num enemies left: 7
+  |5|7|9|11|13|15|17
+  Hero HP: 92
+  ==== After round 2 ====
+  Num enemies left: 6
+  |0|2|4|6|8|10|12
+  Hero HP: 64
+  ==== After round 3 ====
+  Num enemies left: 4
+  |0|-3|-1|1|3|5|7
+  Hero HP: 40
+  ==== After round 4 ====
+  Num enemies left: 1
+  |0|-3|-1|-4|-2|0|2
+  Hero HP: 24
+  ==== After round 5 ====
+  Num enemies left: 0
+  |0|-3|-1|-4|-2|0|-3
+  Hero HP: 20
+  Hero wins!
