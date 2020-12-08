@@ -1,0 +1,104 @@
+https://ccse.kennesaw.edu/fye/docs/1321/labs/m3/fa20/M3%20-%20L4%20-%20Selection%20Structures_FA20.pdf
+
+Lab4A: I hate Mondays
+To start off, you’re going to write a program that prompts the user for a day of the week. For
+Monday, Wednesday and Friday the program responds with a special message. For all other
+input, the program should print a standard message of “It’s another day of the week”. The program
+should behave like the sample runs below. The class name should be Lab4A…
+Sample run #1:
+  Enter the day: Monday
+  Sounds like someone has a case of the Mondays!
+Sample run #2:
+  Enter the day: Wednesday
+  It's hump day! El ombligo!
+  Sample run #3:
+  Enter the day: Friday
+  Finally. It's Friday!
+  Sample run #4:
+  Enter the day: Tuesday
+  It's another day of the week.
+
+
+Lab4B: Takin’ Care of Business
+The weekly pay for an employee is determined based on the following parameters:
+Standard work hours by week is 40 hours.
+Hourly pay rate is $15.00 per hour.
+Overtime hours are paid an additional $10.00 per hour (that is $25.00 per hour).
+For this part of the lab, you should write a program that takes in the number of hours worked per
+week (as an integer value) and then prints out the gross earning based on the chart above. Your
+program should behave like the sample runs below.
+Sample run #1:
+  Number of hours this week: 35
+  Earnings: $525
+  Sample run #2:
+  Number of hours this week: 45
+  Earnings: $725
+  Sample run #3:
+  Number of hours this week: 60
+  Earnings: $1100
+
+
+Lab4C: Just a moment!
+Switch statements are often used to as a mechanism to route messages in systems.
+For example, you may present the user with a menu of options (e.g. “Press 1 for movie times,
+Press 2 for features”). Once the user presses a button, the system then “switches” on that input
+and runs a set of code to handle their choice.
+For this part of the lab, you’re going to build a system that presents the user with three (3) choices.
+Depending on the user input, the program will display output that should look like the sample
+output below. The program should gracefully handle input values less than 1 and greater than 3
+(see Sample run #4).
+
+Sample run #1:
+  Select from the following:
+  To see a list of movies, press 1.
+  To see show times, press 2.
+  To pay your bill, press 3.
+  Choice: 1
+  The Neverending Story 6
+  Princess Diaries: the untold story
+  Monty Python and the Programmer
+Sample run #2:
+  Select from the following:
+  To see a list of movies, press 1.
+  To see show times, press 2.
+  To pay your bill, press 3.
+  Choice: 2
+  All movies play at 3PM.
+Sample run #3:
+  Select from the following:
+  To see a list of movies, press 1.
+  To see show times, press 2.
+  To pay your bill, press 3.
+  Choice: 3
+  Corporate accounts payable, Nina speaking.
+  Just a moment!
+Sample run #4:
+  Select from the following:
+  To see a list of movies, press 1.
+  To see show times, press 2.
+  To pay your bill, press 3.
+  Choice: 7
+  I'm sorry, Dave. I can't do that.
+
+
+Lab4D: Water company (Extra Credit +10pts)
+Imagine a water company that bases their rates on how much water a household uses. The more
+water that the household uses, the higher your rate per gallon will be. For households that use
+less than 1,000 gallons per month, they are charged $0.15 per gallon. If a household uses more
+than 1,000 gallons, the water beyond the 1,000 gallons is charged at $0.25 per gallon up to 2,000
+gallons. The water usage that exceeds 2,000 gallons is charged at $0.35. Write a program that
+asks the user to input how many gallons they used for the month and then calculates their water
+bill.
+As an example, if a person uses 1,200 gallons, 200 of those gallons will be at the rate of $0.25 and
+the remaining 1,000 will be at the rate of $0.15.
+Note: the logic flow of this program is unusual, but interesting. Can you solve it?
+
+Sample run #1:
+  Gallons of water: 1000
+  Water bill is: $150.0
+  Sample run #2:
+  Gallons of water: 1500
+  Water bill is: $275.0
+  Sample run #3:
+  Gallons of water: 2750
+  Water bill is: $662.5
