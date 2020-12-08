@@ -1,0 +1,106 @@
+Lab8A: In lecture, we showed you BubbleSort. Though you can look at the slides and re-code it, we
+recommend that you try solving it on your own (and if you do, you should call your lab instructor over
+and brag – then say you want to be a lab assistant later!)
+Write a program that reads in 10 numbers from the user and stores them in a 1D array of size 10.
+Then, write BubbleSort to sort that array – continuously pushing the largest elements to the right side
+of the array. For every time you swap two elements in the array, you should increment a counter.
+Then, after the inner loop has completed, you should print out the current state of the array and the
+total number of swaps that have occurred. Your program should behave like the sample outputs
+below. Note the first sample output is the “worst case scenario” in that it has the maximum number of
+swaps possible. The second is an “average” scenario, which has roughly half the number of swaps.
+  Sample output #1
+    Enter slot 0: 10
+    Enter slot 1: 9
+    Enter slot 2: 8
+    Enter slot 3: 7
+    Enter slot 4: 6
+    Enter slot 5: 5
+    Enter slot 6: 4
+    Enter slot 7: 3
+    Enter slot 8: 2
+    Enter slot 9: 1
+    9|8|7|6|5|4|3|2|1|10| Num swaps: 9
+    8|7|6|5|4|3|2|1|9|10| Num swaps: 17
+    7|6|5|4|3|2|1|8|9|10| Num swaps: 24
+    6|5|4|3|2|1|7|8|9|10| Num swaps: 30
+    5|4|3|2|1|6|7|8|9|10| Num swaps: 35
+    4|3|2|1|5|6|7|8|9|10| Num swaps: 39
+    3|2|1|4|5|6|7|8|9|10| Num swaps: 42
+    2|1|3|4|5|6|7|8|9|10| Num swaps: 44
+    1|2|3|4|5|6|7|8|9|10| Num swaps: 45
+    1|2|3|4|5|6|7|8|9|10| Num swaps: 45
+  Sample output #2
+    Enter slot 0: 5
+    Enter slot 1: 10
+    Enter slot 2: 8
+    Enter slot 3: 2
+    Enter slot 4: 1
+    Enter slot 5: 6
+    Enter slot 6: 7
+    Enter slot 7: 3
+    Enter slot 8: 9
+    Enter slot 9: 4
+    5|8|2|1|6|7|3|9|4|10| Num swaps: 8
+    5|2|1|6|7|3|8|4|9|10| Num swaps: 14
+    2|1|5|6|3|7|4|8|9|10| Num swaps: 18
+    1|2|5|3|6|4|7|8|9|10| Num swaps: 21
+    1|2|3|5|4|6|7|8|9|10| Num swaps: 23
+    1|2|3|4|5|6|7|8|9|10| Num swaps: 24
+    1|2|3|4|5|6|7|8|9|10| Num swaps: 24
+    1|2|3|4|5|6|7|8|9|10| Num swaps: 24
+    1|2|3|4|5|6|7|8|9|10| Num swaps: 24
+    1|2|3|4|5|6|7|8|9|10| Num swaps: 24
+ 
+
+Lab8B: For this part of the lab, you’re going to perform two different searches on a 1D array and
+visualize the behavior. However, this time, you’re going to create an array of 15 elements, just
+because the math works out a little better.
+Write a program that reads in 15 numbers in sorted order from the user (i.e. the user enters them in
+order) and stores them in a 1D array of size 15. Next, prompt the user for a number to search for in
+the array (i.e. the “target”). Then, print the array.
+Next, search the array using a linear search – printing out each of the indices (or “indexes”) that are
+being examined until the algorithm either finds the target or doesn’t. Then, do the same thing for a
+binary search.
+Again, you can look at the slides for a binary search as a reference if needed, though you need to recode it (copy/paste doesn’t work well).
+Your program should behave like the sample output. Note, after the target is entered, the program
+prints 1) the array, 2) the indices of a linear search and 3) the indices of a binary search.
+  Sample output #1
+    Enter slot 0: 0
+    Enter slot 1: 1
+    Enter slot 2: 2
+    Enter slot 3: 3
+    Enter slot 4: 4
+    Enter slot 5: 5
+    Enter slot 6: 6
+    Enter slot 7: 7
+    Enter slot 8: 8
+    Enter slot 9: 9
+    Enter slot 10: 10
+    Enter slot 11: 11
+    Enter slot 12: 12
+    Enter slot 13: 13
+    Enter slot 14: 14
+    Enter a target: 15
+    0|1|2|3|4|5|6|7|8|9|10|11|12|13|14|
+    0 1 2 3 4 5 6 7 8 9 10 11 12 13 14
+    7 11 13 14
+  Sample output #2
+    Enter slot 0: 3
+    Enter slot 1: 11
+    Enter slot 2: 45
+    Enter slot 3: 57
+    Enter slot 4: 81
+    Enter slot 5: 125
+    Enter slot 6: 129
+    Enter slot 7: 311
+    Enter slot 8: 333
+    Enter slot 9: 361
+    Enter slot 10: 402
+    Enter slot 11: 412
+    Enter slot 12: 475
+    Enter slot 13: 499
+    Enter slot 14: 501
+    Enter a target: 402
+    3|11|45|57|81|125|129|311|333|361|402|412|475|499|501|
+    0 1 2 3 4 5 6 7 8 9 10
+    7 11 9 10
