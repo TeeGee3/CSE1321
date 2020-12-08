@@ -1,0 +1,53 @@
+https://ccse.kennesaw.edu/fye/docs/1321/labs/m7/fa20/M6%20-%20L11%20-%20OOP.pdf
+
+Lab11A: Warmup: the smallest class possible. This part of the lab may seem ridiculous, but it’s to
+prove a point. When you create a class, you’re creating a new data type. Create a class called
+TinyClass that has no attributes and no methods; it’s literally empty. Then, in main, create a variable
+(an object) of the class you just created.
+
+For simplicity, use only one file and create your class just below the headers (e.g. “#include”, “import”,
+or “using” statements). Java/C# students: you cannot define a class inside of another class. Also, do
+not use keywords like “public”, since that would change the file structure in languages like Java.
+Note: there is no output from this. It’s just 1) create the class and 2) create an object of that class in
+main.
+
+
+Lab11B: Understanding the constructor. Remember that the constructor is just a special method
+(with no return type) that has the same name as the class name. Its job is to initialize all of the
+attributes. You can actually have more than one constructor, so long as the parameters are different.
+Create a class called Turtle that has two attributes: 1) speed and 2) color. Then, create a constructor
+that has no parameters, setting the default speed to 0 and the color to “green”; this is called a default
+constructor. Next, create a second constructor that takes in two parameters. The second constructor
+should assign those parameters to the attributes.
+
+Then, in main, create two Turtle objects. For the first Turtle object, call the first constructor. For the
+second Turtle object, call the second constructor (passing it a speed of 5 and a color of “purple”).
+Using the dot ‘.’ Operator, print out the first turtle’s speed and the second turtle’s color.
+This is a test to see if you can design constructors inside your class and initialize attributes.
+  
+  Sample output #1
+  0
+  purple
+
+
+Lab11C: Behaviors. In the context of OOP, functions are called methods or behaviors because they
+typically do something. Most often, they read or change the values of one or more variables in the
+class. For example, you may have a weight variable in a class, and a method called gainWeight( )
+that increases the weight variable by a certain amount.
+
+For this part of the lab, create class KoalaBear that has a weight attribute (in kilograms). Create a
+constructor for the class that takes in (as a parameter) the initial weight of the koala bear. Then, write
+a function called eat( ) that takes in the number of leaves the koala bear should eat. Each leaf weighs
+one gram, so you must increase the weight of the koala bear by one gram. According to a site
+dedicated to saving Koala bears, they can eat between 200-500 grams of leaves per day. To finish
+the class out, include a showWeight() method that prints out how much the koala weighs.
+
+In main, create a koala object starting at 100 kilos and show the koala’s weight. Then, make the
+koala eat 400, 300, and 650 leaves, showing the weight of the koala after each time it eats.
+NOTE: if you’re output does not match exactly (because of the rounding of floating point math), that’s
+OK. For example, Java will include some extra “precision”.
+
+  Sample output #1
+  This koala weighs 100.4 kilos
+  This koala weighs 100.7 kilos
+  This koala weighs 101.35 kilos
