@@ -1,0 +1,14 @@
+  int size = 0;
+  int[] unsorted = new int[size]; //creation of unsorted array 
+
+//Exchnage Sort  -- finds the smallest value and then the next smallest etc.  It does it by pair-wise comparisons and swaps.  
+  
+  for (int i = 0; i < unsorted.length - 1; i++){
+     for (int j = i+1; j < unsorted.length; j++){
+        if (unsorted[j] < unsorted [i]){
+             int temp = unsorted [j];
+             unsorted [j] = unsorted [i];
+             unsorted [i] = temp;
+            }
+        }
+    }
