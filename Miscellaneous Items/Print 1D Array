@@ -1,0 +1,11 @@
+      int[] myArray = {0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169};
+              
+        System.out.print("Enter the size of the array: ");  // ask for user input on how mcuh of the array will be output
+            int size = 0;
+            size = sc.nextInt();
+            
+            
+// will print array with | sepreating numbers
+        for( int index = 0; index < size; index++) {  
+            System.out.print("|"+myArray[index]);   // |0|1|4|9|16|25|36|49|64|81|100|121|144|169
+        }
