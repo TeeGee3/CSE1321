@@ -1,0 +1,12 @@
+ //linear search
+        boolean isFound = false;
+        
+        for (int i = 0; i < myArray.length; i++) {
+            System.out.print(i+" ");
+
+            // If we find a match, return true
+            if (myArray[i] == target){
+                isFound = true; 
+                  continue;
+            } 
+        }
