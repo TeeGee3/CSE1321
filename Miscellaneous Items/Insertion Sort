@@ -1,0 +1,34 @@
+int size = 10;
+int[] list = new int[size]; //creation of array "list"
+
+ for (int index = 1; index < list.length; index++){
+          int key = list [index];
+          int position = index;
+          //  Shift larger values to the right
+          while (position > 0 && key < list[position-1]){
+             list [position] = list [position - 1];
+             position--;
+          }
+          list [position] = key;
+       }
+
+
+
+
+
+// as module ...?
+    public void insertionSort (int[] list)
+    {
+       for (int index=1; index < list.length; index++)
+       {
+          int key = list [index];
+          int position = index;
+          //  Shift larger values to the right
+          while (position > 0 && key < list[position-1]) 
+          {
+             list [position] = list [position - 1];
+             position--;
+          }
+          list [position] = key;
+       }
+    }
