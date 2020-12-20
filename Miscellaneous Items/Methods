@@ -1,0 +1,42 @@
+
+Methods
+It is impractical to think all the code you write can exist in the same space; we need a way of marking a chunk of code, giving it a name, and reusing it.  Once written, we can invoke this chunk of code by name when we need the corresponding block of code to execute.
+
+The program will halt at the point of invocation, run the code in the named block, and then return and resume where it left off.  We'll be "jumping" execution to this named block of code.  This is good for code reuse (since I can call the code from anywhere I'd like and run the same chunk) as well as modularity; modularity means we're breaking our problem solution into pieces, defining those pieces, and then putting it all together in a larger solution.  This is the hallmark of good programming.  An important rule regarding writing methods is that they cannot be contained within another method, so at this point, we will start writing code that is OUTSIDE of the Main method, but inside of the Main class.
+
+Parts of a Method
+Every method contains two parts: a header (sometimes called a declaration) and a body.  The body of a method is not unlike the code that we have written up until now, but the header consists of very specific parts.  Following is a breakdown of the header in a method.  
+
+     //header syntax (Java and C#) 
+
+     <visibility modifier> <static keyword (if required)> <return type> <method name> (<parameters>)
+
+     Example:
+
+           public static int addTwoNums(int numOne, int numTwo)
+           {
+
+                 //body goes here!
+                 //body is set aside in curly braces; indentation is for readability only.
+
+           }
+
+
+
+Now, let's talk about each part.  Note that all parts are discussed here for both languages.  Refer to the examples for terms you should know.
+
+**def** - short for "define".  This keyword is required in a function header in Pyhon to define a function.
+
+**visibility modifier** - can be public or private.  Methods are typically public, meaning they can be seen from anywhere in the program.  The private level of visibility restricts access to only the class in which the method lives.
+ 
+**static keyword**  - the static keyword indicates that a method belongs to the class, not specific instances.  In other words, if the static keyword is in the header, it means you do NOT need an instance of an object to use the method.
+
+**return type** - this is the type of data that the method returns to the calling function.  When the function is finished running, it will use the "return" keyword to send back data of that type to the calling function.  If you are not returning any data from a method, the return type is void.  
+
+**method name** - this is the name that we use to "invoke" the method, i.e., cause the body of the method to run!  There are a few important rules regarding allowed names, but probably the most important is that a method's name should describe what task it actually takes care of.  When we name our methods this way, we accomplish "abstraction" in our code - understanding what a method does without knowing all of the inner workings.
+
+**parameters** - when we invoke a method, the parameters describe the data that we need to provide to it in order for the method to run.  As shown above, parameters are created the same way that we create variables; this is because when the method is called, this part of the header literally creates local variable to store the data that is being passed.
+
+**return** - keyword used to specify a return value to be passed back to the code that called the function. 
+
+
