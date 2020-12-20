@@ -1,0 +1,45 @@
+Object-Oriented Programming
+
+    Classes are central to the concept of modern programming.  They give us a means to break up larger programs into manageable pieces and model our 
+    solution to the problem using classes.  Classes consist of data and behaviors.  The data are variables and the behaviors are functions/methods.
+
+Defining a Class
+
+    We define a class by using the keyword 'class' and then providing it a name and then enclosing all the data and methods as dictated in the language:
+
+    public class Player
+
+      // DATA GOES HERE
+      // METHODS GO HERE
+
+
+    A class also has a special function which has the same name as the class itself; this is called the constructor, and it is invoked
+    whenever we create a new object of the class.  The constructor (since it's always run when an object of the class is created) is a useful 
+    place to put initialization code to set up the object properly.
+
+Public vs. Private
+
+    Once we have defined a class, we need to make use of it.  But this implies that there is a consumer of the class.  
+    The user of the class may or may not need complete control of the class's internal information or methods.  Often, we want to hide as much of this as possible.
+    This is where privacy comes in.  It is best to keep as much private within a class as possible to avoid data 
+    corruption or problems in the future when we use the  class.  To do this, make sure everything is marked private if possible and only mark 
+    something public if it should be visible outside the class.  By default, unless you specify otherwise, C# makes all methods and variables within a class private.
+
+Using a Class
+
+    Once we've completed the class definition, we can instantiate it.  This means we'll create an object of the class type.  This takes the form of:
+
+    CLASS OBJECT = new CLASS(OPTIONAL PARAMETERS);
+
+    For example, if we had a Player class, then we could do the following:
+
+    Player playerOne = new Player("Jon", 0, new Vector(10,10), 0);
+
+    This assumes the constructor for the Player class is expecting four parameters.
+
+    We can, of course, make multiple instances of the same class, like this:
+
+    Player playerOne;
+    Player playerTwo;
+    playerOne = new Player("Bob", 0, new Vector2(10,10), 0);
+    playerTwo = new Player ("Alice, 1, new Vector2(200,10), 0);
