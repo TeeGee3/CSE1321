@@ -17,4 +17,13 @@
           }
       }
       
+// Print in Matrix
+      for(int row = 0; row < array1.length; row++){
+          for(int col =0; col < array1[0].length; col++){
+              System.out.print(array1[row][col] + " \t");
+          }
+          System.out.println();
+      }
+      
+      
       
