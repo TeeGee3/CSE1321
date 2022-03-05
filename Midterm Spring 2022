@@ -1,0 +1,130 @@
+Question 1------------------------
+class Main {
+  public static void main(String[] args) {
+
+    Room guest = new Room();
+    guest.setData(101, "Deluxe", 240, true );
+    guest.displayData();
+  
+  }
+}
+
+
+class Room{
+  int roomNo;
+  String roomType;
+  float roomArea;
+  boolean AC;
+
+
+  public void setData(int num, String type, float area, boolean ac){
+  roomNo = num;
+  roomType = type;
+  roomArea = area;
+  AC = ac;
+  }
+
+  public void displayData(){
+    System.out.println("Room Number: "+ roomNo+", Room Type: "+roomType+", Room Area: "+roomArea+" sq ft, Has AC: "+AC);
+  }
+}
+
+
+QUESTION 2 -------------------------------------
+
+class Main {
+  public static void main(String[] args) {
+
+    B phone = new B();
+    System.out.println();
+
+    phone.callMe();
+    phone.callMeToo();
+  }
+}
+
+abstract class A{
+
+  abstract void callMe();
+  void callMeToo(){
+    System.out.println("This is a concrete method");
+  }
+}
+
+
+class B extends A{
+  
+  @Override
+  void callMe(){ 
+    System.out.println("B's implementation of callMe");
+    }
+}
+
+
+
+
+
+QUESTION 3 --------------------------------------------------
+class Main {
+  public static void main(String[] args) {
+
+    MyClass mc = new MyClass();
+    mc.method1();
+    mc.method2();
+    
+  }
+}
+
+ interface A{
+  void method1();
+  void method2();
+}
+
+
+ class MyClass implements A{
+  @Override
+  public void method1(){
+    System.out.println("I'm method 1");
+  }
+  @Override
+  public void method2(){
+    System.out.println("I'm method 2");
+    }
+}
+
+
+
+
+QUESTION 4------------------------------------
+
+import java.util.ArrayList;
+
+class Main {
+  public static void main(String[] args) {
+
+   ArrayList<Integer> myList = new ArrayList<>();
+
+    myList.add(0,2);
+    myList.add(1,4);
+    myList.add(2,4);
+    myList.add(3, -2);
+
+    System.out.println(calculateSum(myList));
+      
+    }
+
+
+
+  
+
+  public static int calculateSum(ArrayList<Integer> theList){
+    int sum = 0;
+
+    for(int n : theList){
+      if(n>0){
+        sum = sum+n;
+      }
+    }
+    return sum;
+  }
+}
